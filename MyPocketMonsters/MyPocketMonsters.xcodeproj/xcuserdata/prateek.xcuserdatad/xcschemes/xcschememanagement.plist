@@ -7,7 +7,35 @@
 		<key>MyPocketMonsters.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>MyPocketMonstersUITests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>MyPocketMonstersUnitTests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>6E6F559E2C30A5FC00E338FD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6E6F55AE2C30A5FD00E338FD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6E6F55B82C30A5FD00E338FD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
