@@ -39,7 +39,7 @@
 		6E6F55A42C30A5FC00E338FD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6E6F55A62C30A5FD00E338FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E6F55A92C30A5FD00E338FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		6E6F55AF2C30A5FD00E338FD /* MyPocketMonstersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyPocketMonstersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E6F55AF2C30A5FD00E338FD /* MyPocketMonstersUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyPocketMonstersUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E6F55B32C30A5FD00E338FD /* MyPocketMonstersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPocketMonstersTests.swift; sourceTree = "<group>"; };
 		6E6F55B92C30A5FD00E338FD /* MyPocketMonstersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyPocketMonstersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E6F55BD2C30A5FD00E338FD /* MyPocketMonstersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPocketMonstersUITests.swift; sourceTree = "<group>"; };
@@ -75,7 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				6E6F55A12C30A5FC00E338FD /* MyPocketMonsters */,
-				6E6F55B22C30A5FD00E338FD /* MyPocketMonstersTests */,
+				6E6F55B22C30A5FD00E338FD /* MyPocketMonstersUnitTests */,
 				6E6F55BC2C30A5FD00E338FD /* MyPocketMonstersUITests */,
 				6E6F55A02C30A5FC00E338FD /* Products */,
 			);
@@ -85,7 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				6E6F559F2C30A5FC00E338FD /* MyPocketMonsters.app */,
-				6E6F55AF2C30A5FD00E338FD /* MyPocketMonstersTests.xctest */,
+				6E6F55AF2C30A5FD00E338FD /* MyPocketMonstersUnitTests.xctest */,
 				6E6F55B92C30A5FD00E338FD /* MyPocketMonstersUITests.xctest */,
 			);
 			name = Products;
@@ -110,12 +110,12 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		6E6F55B22C30A5FD00E338FD /* MyPocketMonstersTests */ = {
+		6E6F55B22C30A5FD00E338FD /* MyPocketMonstersUnitTests */ = {
 			isa = PBXGroup;
 			children = (
 				6E6F55B32C30A5FD00E338FD /* MyPocketMonstersTests.swift */,
 			);
-			path = MyPocketMonstersTests;
+			path = MyPocketMonstersUnitTests;
 			sourceTree = "<group>";
 		};
 		6E6F55BC2C30A5FD00E338FD /* MyPocketMonstersUITests */ = {
@@ -147,9 +147,9 @@
 			productReference = 6E6F559F2C30A5FC00E338FD /* MyPocketMonsters.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6E6F55AE2C30A5FD00E338FD /* MyPocketMonstersTests */ = {
+		6E6F55AE2C30A5FD00E338FD /* MyPocketMonstersUnitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6E6F55C62C30A5FD00E338FD /* Build configuration list for PBXNativeTarget "MyPocketMonstersTests" */;
+			buildConfigurationList = 6E6F55C62C30A5FD00E338FD /* Build configuration list for PBXNativeTarget "MyPocketMonstersUnitTests" */;
 			buildPhases = (
 				6E6F55AB2C30A5FD00E338FD /* Sources */,
 				6E6F55AC2C30A5FD00E338FD /* Frameworks */,
@@ -160,9 +160,9 @@
 			dependencies = (
 				6E6F55B12C30A5FD00E338FD /* PBXTargetDependency */,
 			);
-			name = MyPocketMonstersTests;
+			name = MyPocketMonstersUnitTests;
 			productName = MyPocketMonstersTests;
-			productReference = 6E6F55AF2C30A5FD00E338FD /* MyPocketMonstersTests.xctest */;
+			productReference = 6E6F55AF2C30A5FD00E338FD /* MyPocketMonstersUnitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		6E6F55B82C30A5FD00E338FD /* MyPocketMonstersUITests */ = {
@@ -220,7 +220,7 @@
 			projectRoot = "";
 			targets = (
 				6E6F559E2C30A5FC00E338FD /* MyPocketMonsters */,
-				6E6F55AE2C30A5FD00E338FD /* MyPocketMonstersTests */,
+				6E6F55AE2C30A5FD00E338FD /* MyPocketMonstersUnitTests */,
 				6E6F55B82C30A5FD00E338FD /* MyPocketMonstersUITests */,
 			);
 		};
@@ -483,7 +483,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.prate-k.MyPocketMonstersTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.prate-k.MyPocketMonstersUnitTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -503,7 +503,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.prate-k.MyPocketMonstersTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.prate-k.MyPocketMonstersUnitTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -569,7 +569,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6E6F55C62C30A5FD00E338FD /* Build configuration list for PBXNativeTarget "MyPocketMonstersTests" */ = {
+		6E6F55C62C30A5FD00E338FD /* Build configuration list for PBXNativeTarget "MyPocketMonstersUnitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6E6F55C72C30A5FD00E338FD /* Debug */,

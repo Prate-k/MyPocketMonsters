@@ -8,7 +8,7 @@
       buildArchitectures = "Automatic">
       <BuildActionEntries>
          <BuildActionEntry
-            buildForTesting = "NO"
+            buildForTesting = "YES"
             buildForRunning = "YES"
             buildForProfiling = "YES"
             buildForArchiving = "YES"
@@ -36,8 +36,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6E6F55AE2C30A5FD00E338FD"
-               BuildableName = "MyPocketMonstersTests.xctest"
-               BlueprintName = "MyPocketMonstersTests"
+               BuildableName = "MyPocketMonstersUnitTests.xctest"
+               BlueprintName = "MyPocketMonstersUnitTests"
                ReferencedContainer = "container:MyPocketMonsters.xcodeproj">
             </BuildableReference>
          </TestableReference>
