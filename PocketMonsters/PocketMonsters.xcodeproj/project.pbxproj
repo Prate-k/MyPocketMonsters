@@ -25,10 +25,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6EB2588D2C3DEB1300810C63 /* PocketMonstersTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = PocketMonstersTests.xctestplan; path = ../../PocketMonstersTests.xctestplan; sourceTree = "<group>"; };
 		6EB258902C3DF3DA00810C63 /* main.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = main.xcconfig; path = ../configs/main.xcconfig; sourceTree = "<group>"; };
 		6EB258912C3DF3DA00810C63 /* tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = tests.xcconfig; path = ../configs/tests.xcconfig; sourceTree = "<group>"; };
-		6EB258922C3DF42A00810C63 /* PocketMonstersTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = PocketMonstersTests.xctestplan; path = PocketMonstersTests/PocketMonstersTests.xctestplan; sourceTree = "<group>"; };
+		6EB258922C3DF42A00810C63 /* PocketMonstersTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = PocketMonstersTests.xctestplan; sourceTree = "<group>"; };
 		6EFCBDA32C3DE7AE00B28B0C /* PocketMonsters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketMonsters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EFCBDA62C3DE7AE00B28B0C /* PocketMonstersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketMonstersApp.swift; sourceTree = "<group>"; };
 		6EFCBDA82C3DE7AE00B28B0C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,7 +58,6 @@
 		6EFCBD9A2C3DE7AE00B28B0C = {
 			isa = PBXGroup;
 			children = (
-				6EB258922C3DF42A00810C63 /* PocketMonstersTests.xctestplan */,
 				6EB258902C3DF3DA00810C63 /* main.xcconfig */,
 				6EB258912C3DF3DA00810C63 /* tests.xcconfig */,
 				6EFCBDA52C3DE7AE00B28B0C /* PocketMonsters */,
@@ -99,7 +97,7 @@
 		6EFCBDB62C3DE7B100B28B0C /* PocketMonstersTests */ = {
 			isa = PBXGroup;
 			children = (
-				6EB2588D2C3DEB1300810C63 /* PocketMonstersTests.xctestplan */,
+				6EB258922C3DF42A00810C63 /* PocketMonstersTests.xctestplan */,
 				6EFCBDB72C3DE7B100B28B0C /* PocketMonstersTests.swift */,
 			);
 			path = PocketMonstersTests;
@@ -231,6 +229,7 @@
 /* Begin XCBuildConfiguration section */
 		6EFCBDC52C3DE7B100B28B0C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EB258902C3DF3DA00810C63 /* main.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -294,6 +293,7 @@
 		};
 		6EFCBDC62C3DE7B100B28B0C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EB258902C3DF3DA00810C63 /* main.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -350,6 +350,7 @@
 		};
 		6EFCBDC82C3DE7B100B28B0C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EB258902C3DF3DA00810C63 /* main.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -379,6 +380,7 @@
 		};
 		6EFCBDC92C3DE7B100B28B0C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EB258912C3DF3DA00810C63 /* tests.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -408,6 +410,7 @@
 		};
 		6EFCBDCB2C3DE7B100B28B0C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EB258912C3DF3DA00810C63 /* tests.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -428,6 +431,7 @@
 		};
 		6EFCBDCC2C3DE7B100B28B0C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EB258912C3DF3DA00810C63 /* tests.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
