@@ -1,6 +1,4 @@
 # Create the config directory
-Dir.mkdir("../configs")
-
 main_bundle_id = ENV['MAIN_BUNDLE_ID']
 team = ENV['TEAM']
 
