@@ -1,0 +1,25 @@
+{
+  "configurations" : [
+    {
+      "id" : "AE75C771-CE35-4EB7-A60F-C40F4E9DD4C4",
+      "name" : "Configuration 1",
+      "options" : {
+        "testExecutionOrdering" : "random"
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testExecutionOrdering" : "random",
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:PocketMonsters.xcodeproj",
+        "identifier" : "6EFCBDB22C3DE7B100B28B0C",
+        "name" : "PocketMonstersTests"
+      }
+    }
+  ],
+  "version" : 1
+}

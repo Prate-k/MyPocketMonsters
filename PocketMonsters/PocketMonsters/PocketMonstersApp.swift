@@ -1,14 +1,14 @@
 //
-//  MyPocketMonstersApp.swift
-//  MyPocketMonsters
+//  PocketMonstersApp.swift
+//  PocketMonsters
 //
-//  Created by Prateek on 2024/06/29.
+//  Created by Prateek on 2024/07/09.
 //
 
 import SwiftUI
 
 @main
-struct MyPocketMonstersApp: App {
+struct PocketMonstersApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

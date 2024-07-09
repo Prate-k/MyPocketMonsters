@@ -14,11 +14,19 @@ jobs:
     runs-on: macos-latest
     defaults:
       run:
-        working-directory: ./MyPocketMonsters
+        working-directory: ./PocketMonsters
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        
+      - name: Prepare Config
+        env: 
+          TEAM: ${{ secrets.DEVELOPMENT_TEAM }}
+          MAIN_BUNDLE_ID: ${{ secrets.PRODUCT_BUNDLE_IDENTIFIER }}
+        run:  |
+          ruby ../scripts/prepare_configs.rb
+          
       - name: Set Default Scheme
         run: |
           scheme_list=$(xcodebuild -list -json | tr -d "\n")
@@ -27,7 +35,7 @@ jobs:
           echo Using default scheme: $default
       - name: Build
         env:
-          scheme: ${{ 'MyPocketMonsters' }}
+          scheme: ${{ 'PocketMonsters' }}
           platform: ${{ 'iOS Simulator' }}
         run: |
           # xcrun xctrace returns via stderr, not the expected stdout (see https://developer.apple.com/forums/thread/663959)
@@ -38,7 +46,7 @@ jobs:
           xcodebuild build-for-testing -scheme "$scheme" -"$filetype_parameter" "$file_to_build" -destination "platform=$platform,name=$device"
       - name: Test
         env:
-          scheme: ${{ 'MyPocketMonstersUnitTests' }}
+          scheme: ${{ 'PocketMonstersTests' }}
           platform: ${{ 'iOS Simulator' }}
         run: |
           # xcrun xctrace returns via stderr, not the expected stdout (see https://developer.apple.com/forums/thread/663959)

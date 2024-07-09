@@ -1,14 +1,14 @@
 //
-//  MyPocketMonstersTests.swift
-//  MyPocketMonstersTests
+//  PocketMonstersTests.swift
+//  PocketMonstersTests
 //
-//  Created by Prateek on 2024/06/29.
+//  Created by Prateek on 2024/07/09.
 //
 
 import XCTest
-@testable import MyPocketMonsters
+@testable import PocketMonsters
 
-final class MyPocketMonstersTests: XCTestCase {
+final class PocketMonstersTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

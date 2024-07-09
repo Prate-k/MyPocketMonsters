@@ -6,19 +6,37 @@
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES"
       buildArchitectures = "Automatic">
+      <PreActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Run Script"
+               scriptText = "configFilePath=&quot;${SRCROOT}/configs/&quot;&#10;&gt; $configFilePath&#10;if [ -f ${configFilePath}.main ]; then&#10;    cat &quot;${SRCROOT}/.main&quot; &gt;&gt; ${configFilePath}main.xcconfig&#10;    rm &quot;${SRCROOT}/.main&quot;&#10;fi&#10;">
+               <EnvironmentBuildable>
+                  <BuildableReference
+                     BuildableIdentifier = "primary"
+                     BlueprintIdentifier = "6EFCBDA22C3DE7AE00B28B0C"
+                     BuildableName = "PocketMonsters.app"
+                     BlueprintName = "PocketMonsters"
+                     ReferencedContainer = "container:PocketMonsters.xcodeproj">
+                  </BuildableReference>
+               </EnvironmentBuildable>
+            </ActionContent>
+         </ExecutionAction>
+      </PreActions>
       <BuildActionEntries>
          <BuildActionEntry
-            buildForTesting = "YES"
+            buildForTesting = "NO"
             buildForRunning = "YES"
             buildForProfiling = "YES"
             buildForArchiving = "YES"
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6E6F559E2C30A5FC00E338FD"
-               BuildableName = "MyPocketMonsters.app"
-               BlueprintName = "MyPocketMonsters"
-               ReferencedContainer = "container:MyPocketMonsters.xcodeproj">
+               BlueprintIdentifier = "6EFCBDA22C3DE7AE00B28B0C"
+               BuildableName = "PocketMonsters.app"
+               BlueprintName = "PocketMonsters"
+               ReferencedContainer = "container:PocketMonsters.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,10 +53,10 @@
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6E6F55AE2C30A5FD00E338FD"
-               BuildableName = "MyPocketMonstersUnitTests.xctest"
-               BlueprintName = "MyPocketMonstersUnitTests"
-               ReferencedContainer = "container:MyPocketMonsters.xcodeproj">
+               BlueprintIdentifier = "6EFCBDB22C3DE7B100B28B0C"
+               BuildableName = "PocketMonstersTests.xctest"
+               BlueprintName = "PocketMonstersTests"
+               ReferencedContainer = "container:PocketMonsters.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -46,10 +64,10 @@
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6E6F55B82C30A5FD00E338FD"
-               BuildableName = "MyPocketMonstersUITests.xctest"
-               BlueprintName = "MyPocketMonstersUITests"
-               ReferencedContainer = "container:MyPocketMonsters.xcodeproj">
+               BlueprintIdentifier = "6EFCBDBC2C3DE7B100B28B0C"
+               BuildableName = "PocketMonstersUITests.xctest"
+               BlueprintName = "PocketMonstersUITests"
+               ReferencedContainer = "container:PocketMonsters.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -68,10 +86,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6E6F559E2C30A5FC00E338FD"
-            BuildableName = "MyPocketMonsters.app"
-            BlueprintName = "MyPocketMonsters"
-            ReferencedContainer = "container:MyPocketMonsters.xcodeproj">
+            BlueprintIdentifier = "6EFCBDA22C3DE7AE00B28B0C"
+            BuildableName = "PocketMonsters.app"
+            BlueprintName = "PocketMonsters"
+            ReferencedContainer = "container:PocketMonsters.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -85,10 +103,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6E6F559E2C30A5FC00E338FD"
-            BuildableName = "MyPocketMonsters.app"
-            BlueprintName = "MyPocketMonsters"
-            ReferencedContainer = "container:MyPocketMonsters.xcodeproj">
+            BlueprintIdentifier = "6EFCBDA22C3DE7AE00B28B0C"
+            BuildableName = "PocketMonsters.app"
+            BlueprintName = "PocketMonsters"
+            ReferencedContainer = "container:PocketMonsters.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
